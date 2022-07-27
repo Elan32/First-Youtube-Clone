@@ -1,0 +1,36 @@
+.videoSecond {
+    background-color: rgb(247, 253, 255);
+    display: flex;
+   overflow-x: hidden;
+   margin-bottom: 30px;
+
+}
+
+
+
+
+ .frow {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.eachVideo {
+    margin: auto;
+}
+
+
+@media screen and (min-width: 970px) and (max-width:1470px) {
+    .videoSecond{
+        width: 100%;
+    }
+
+    .eachVideo{
+        flex: 33.33%;
+    }
+
+    
+}
+
+

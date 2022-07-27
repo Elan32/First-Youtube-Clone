@@ -1,0 +1,167 @@
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+
+
+.nav__a {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav__a__icon{
+    margin-left: 10px;
+    font-size: 50px !important;
+    cursor: pointer;
+
+}
+
+.nav__a__img {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    object-fit: contain;
+    
+ 
+}
+
+.nav__b {
+    display: flex;
+    align-items: center;    
+}
+
+
+
+.nav__b__input {
+ 
+    width: 35vw;
+    height: 6vh;
+    border-right: none;
+    font-size: 1.7em;
+    padding: 10px;
+    border: 2px solid #c9c7c7;
+    box-shadow: 0 0 10px #dbdddf;
+    border-radius: 2px;  
+    padding-left: 40px;
+}
+
+.nav__b__input:focus {
+    outline: none;
+    border: 2px solid #3a0efd;
+    box-shadow: 0px 0px 4px #4195fc;
+   
+} 
+.first {
+    position: absolute;
+    font-size: 28px !important;
+    top: 28px;
+    margin-left: 5px;
+    display: none; 
+}
+
+.nav__b__search{
+    
+    border: 2px solid #c9c7c7;
+    box-shadow: 0 0 10px #dbdddf;
+    border-left: none;
+    border-radius: 3px;
+    background-color: #f8f2f2 !important;
+    cursor: pointer;
+    width: 5vw !important;
+    height: 6vh !important;
+    
+  
+
+}
+
+.nav__b__search:hover {
+    background-color: #d4d1d1 !important;
+}
+
+.nav__b__mic {
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #f5f4f4;
+    font-size: 40px !important;
+    cursor: pointer;
+}
+
+.nav__c {
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    justify-content: space-between;
+    margin-right: 30px;  
+}
+
+.nav__c__video {
+  
+    font-size: 40px !important;
+    cursor: pointer;
+}
+
+.nav__c__notification{
+    font-size: 40px !important;
+    cursor: pointer;
+}
+
+.nav__c__avatar{
+    font-size: 60px !important;
+    cursor: pointer;
+}
+
+@media screen and (min-width:840px) {
+    .leftarrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .leftarrow{
+        display: visible;
+   
+    }
+
+    .myleftar {
+        font-size: 30px !important;
+        margin-right: 10px;
+        
+    }
+
+    .nav__a, .nav__c{
+        display: none;
+    }
+
+
+    .nav__b__input {
+        width: 70vw;
+    }
+
+    .nav__b__search{
+        width: 70px !important;
+    }
+
+    
+
+   
+}
+

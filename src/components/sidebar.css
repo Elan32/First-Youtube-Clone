@@ -1,0 +1,145 @@
+.sidebar {
+    flex: 0.2;   
+    top:0;
+    z-index: 10;
+    height: 100vh;
+   
+
+}
+
+.sidebar:hover {
+    overflow-y: scroll;
+    
+}
+
+
+
+
+
+
+.sidebar__a, .sidebar__b, .sidebar__c, .sidebar__last {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 2em;
+  
+}
+
+
+
+.sidebar__a__same {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.sidebar__a__same:hover {
+    background-color: rgb(231, 229, 229);
+}
+
+.mydefault {
+    background-color: rgb(196, 195, 195);
+}
+.myIcon {
+    font-size: 1.8em !important;
+}
+
+.myText {
+    margin-left: 1.5em;
+}
+
+hr {
+    opacity: 0.3;
+     box-shadow: 1px 1px 2px 2px rgb(236, 234, 234);
+}
+
+.sidebar__last__a, .sidebar__last__b {
+    margin-top: 20px;
+   
+}
+.sidebar__last__c {
+    margin-top: 20px;
+    margin-bottom: 100px;
+   
+}
+pre, .sidebar__last__c > p {
+    font-size:16px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    font-family: sans-serif;
+}
+
+.sidebar__last__c > p {
+    opacity: 0.6;
+}
+
+.sidebar__last__a > p {
+    margin-top: 5px;
+}
+
+.sidebar__last__b > p {
+    margin-top: 5px;
+}
+
+
+
+@media screen and (min-width: 1470px) {
+    .sidebar {
+        flex: 0.2; 
+    }
+}
+
+@media screen and (min-width: 970px) and (max-width:1470px) {
+
+   
+    .sidebar {
+        flex: 0.1; 
+    }
+
+ 
+
+  .sidebar__a__same{
+    flex-direction: column;
+  }
+
+  .myIcon {
+    font-size: 1.5em !important;
+}
+
+  .myText {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  hr{
+    display: none;
+  }
+  
+
+  .sidebar::-webkit-scrollbar {
+    display: none; 
+  }
+
+  
+  
+  .sidebar__b, .sidebar__c, .sidebar__last {
+    display: none;
+  }
+
+
+ }
+
+ @media screen  and (max-width:970px) {
+
+    .sidebar{
+        display: none;
+        flex:0;
+    }
+ }
+
+ 
+
+
